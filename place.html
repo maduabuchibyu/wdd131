@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Country Page — Nigeria</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="JS/main.js" defer></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="site-header" role="banner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">NG</div>
+        <div>
+          <h1> Nigeria</h1>
+          <p class="lead">Vibrant culture, landscapes, and communities.</p>
+        </div>
+      </div>
+      <nav aria-label="main navigation">
+        <a class="btn" href="#about">About</a>
+      </nav>
+    </header>
+
+    <!-- HERO: picture + WebP srcset -->
+    <section class="hero card" aria-label="hero">
+      <picture>
+        <!-- large desktop -->
+        <source type="images/webp" media="(min-width:1000px)" srcset="images/hero-large.webp 1200w">
+        <!-- tablet -->
+        <source type="images/webp" media="(min-width:600px)" srcset="images/hero-medium.webp 800w">
+        <!-- fallback (mobile) -->
+        <img src="images/landscape copy.webp" alt="Market scene and landscape in Nigeria" class="hero-img">
+      </picture>
+
+      <div class="hero-caption">
+        <div>
+          <h2 class="hero-title">From Lagos bustle to serene national parks</h2>
+          <p class="meta">A land of music, food, history, and natural beauty.</p>
+        </div>
+        <div class="hero-side">
+          <p class="meta">Population: ~216M</p>
+          <a class="btn" href="#weather">Weather</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="grid" role="main">
+      <section id="about" class="card">
+        <h2>About Nigeria</h2>
+        <p class="meta">West Africa — rich in languages, traditions, and vibrant cities.</p>
+        <p>Nigeria is home to diverse peoples, landscapes from coastline to savanna, and a lively cultural scene. Use
+          this area to describe landmarks, culture, food, and travel notes.</p>
+      </section>
+
+      <aside id="weather" class="card" role="complementary" aria-labelledby="weather-heading">
+        <div class="weather">
+          <div class="icon" aria-hidden="true">
+            <!-- SVG icon used for mobile view (file or inline SVG are acceptable) -->
+            <svg class="svg-icon" width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              focusable="false" aria-hidden="true">
+              <path fill="#f59e0b"
+                d="M12 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4.22 2.03l.7-.71a1 1 0 011.41 1.42l-.7.7a1 1 0 11-1.4-1.41zM20 11a1 1 0 110 2h-1a1 1 0 110-2h1zM6.08 4.32a1 1 0 00-1.41 1.41l.7.7a1 1 0 101.41-1.41l-.7-.7zM4 11a1 1 0 100 2H3a1 1 0 100-2h1zM12 7a5 5 0 100 10 5 5 0 000-10z" />
+            </svg>
+          </div>
+
+          <div class="info">
+            <h2 id="weather-heading">Weather</h2>
+            <p class="meta">Mostly sunny with coastal breezes.</p>
+
+            <!-- static values (must match values used by JS) -->
+            <p>Temperature: <strong><span id="temp">8</span>°C</strong></p>
+            <p>Wind: <strong><span id="wind">12</span> km/h</strong></p>
+            <p>Wind Chill: <strong><span id="windchill">—</span></strong></p>
+
+            <p class="meta">*Static values used for this assignment*</p>
+          </div>
+        </div>
+      </aside>
+
+      <section class="card">
+        <h2>Top Sights</h2>
+        <ul>
+          <li>Lagos Islands & Lekki</li>
+          <li>Zuma Rock & Aso Rock</li>
+          <li>Yankari National Park</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="footer-inner">
+        <div> Country Page </div>
+        <div>&copy; <span id="year"></span> &middot; Last modified: <span id="lastModified"></span></div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
