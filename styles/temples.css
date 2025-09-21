@@ -1,0 +1,82 @@
+/* General reset & font */
+body {
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation */
+.navigation {
+  display: none; /* hidden on mobile until hamburger clicked */
+  flex-direction: column;
+  background: #003366;
+}
+
+.navigation a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.navigation a:hover {
+  background: #0055aa;
+}
+
+/* Hamburger */
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: single column */
+  gap: 2rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #003366;
+  color: white;
+  font-size: 0.9rem;
+}
