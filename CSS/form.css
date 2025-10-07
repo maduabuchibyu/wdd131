@@ -1,0 +1,58 @@
+body {
+  background: #f9f9f9;
+  color: #222;
+}
+header, footer {
+  background: #1e90ff;
+  color: white;
+}
+input[type="submit"] {
+  background: #1e90ff;
+  color: white;
+}
+
+
+header, footer {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  padding: 1em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form {
+  display: grid;
+  gap: 1em;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background: #1e90ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background: #155fa0;
+}
